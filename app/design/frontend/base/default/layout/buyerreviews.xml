@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * SUMOHeavy_BuyerReviews
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to support@sumoheavy.com so we can send you a copy immediately.
+ *
+ * @category    SUMOHeavy
+ * @package     SUMOHeavy_BuyerReviews
+ * @copyright   Copyright (c) 2012 SUMO Heavy Industries (http://www.sumoheavy.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author		Robert Brodie <support@sumoheavy.com>
+ */
+ -->
+<layout version="0.1.0">
+	<review_product_list translate="label">
+		<reference name="head">
+			<action method="addCss"><stylesheet>css/buyerreviews/buyerreviews.css</stylesheet></action>
+		</reference>
+		<reference name="product.info">
+			<block type="review/product_view_list" name="product.info.product_additional_data" as="product_additional_data" template="buyerreviews/product/view/list.phtml">
+				<block type="review/form" name="product.review.form" as="review_form">
+ 					<block type="page/html_wrapper" name="product.review.form.fields.before" as="form_fields_before" translate="label">
+						<label>Review Form Fields Before</label>
+						<action method="setMayBeInvisible"><value>1</value></action>
+					</block>
+				</block>
+			</block>
+		</reference>
+    </review_product_list>
+</layout>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <SUMOHeavy_BuyerReviews>
+            <active>true</active>
+            <codePool>community</codePool>
+        </SUMOHeavy_BuyerReviews>
+    </modules>
+</config>

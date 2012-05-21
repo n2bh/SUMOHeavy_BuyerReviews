@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/**
+ * SUMOHeavy_BuyerReviews
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to support@sumoheavy.com so we can send you a copy immediately.
+ *
+ * @category    SUMOHeavy
+ * @package     SUMOHeavy_BuyerReviews
+ * @copyright   Copyright (c) 2012 SUMO Heavy Industries (http://www.sumoheavy.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @author		Robert Brodie <support@sumoheavy.com>
+ */
+ -->
+
+<config>
+	<modules>
+		<SUMOHeavy_BuyerReviews>
+			<version>0.1.0</version>
+		</SUMOHeavy_BuyerReviews>
+	</modules>
+	<frontend>
+		<layout>
+			<updates>
+				<buyerreviews>
+					<file>buyerreviews.xml</file>
+				</buyerreviews>
+			</updates>
+		</layout>
+		<routers>
+			<sumoheavy>
+				<use>standard</use>
+				<args>
+					<module>SUMOHeavy_BuyerReviews</module>
+					<frontName>sumoheavy</frontName>
+				</args>
+			</sumoheavy>
+		</routers>
+	</frontend>
+	<global>
+		<blocks>
+			<buyerreviews>
+				<class>SUMOHeavy_BuyerReviews_Block</class>
+			</buyerreviews>
+		</blocks>
+		<models>
+			<sumoheavy_buyerreviews>
+				<class>SUMOHeavy_BuyerReviews_Model</class>
+			</sumoheavy_buyerreviews>
+			<review>
+				<rewrite>
+					<review>SUMOHeavy_BuyerReviews_Model_Review</review>
+				</rewrite>
+			</review>
+		</models>
+	</global>
+</config>
