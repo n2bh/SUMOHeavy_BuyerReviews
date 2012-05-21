@@ -108,4 +108,4 @@ var/
 
 !app/design/frontend/base/default/template/buyerreviews/
 !app/design/frontend/base/default/layout/buyerreviews.xml
-!skin/frontend/bsae/default/css/buyerreviews/
+!skin/frontend/base/default/css/buyerreviews/
