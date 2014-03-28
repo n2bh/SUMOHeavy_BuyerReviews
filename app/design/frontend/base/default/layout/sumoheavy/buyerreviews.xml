@@ -23,10 +23,10 @@
 <layout version="0.1.0">
 	<review_product_list translate="label">
 		<reference name="head">
-			<action method="addCss"><stylesheet>css/buyerreviews/buyerreviews.css</stylesheet></action>
+			<action method="addCss"><stylesheet>css/sumoheavy/buyerreviews/buyerreviews.css</stylesheet></action>
 		</reference>
 		<reference name="product.info">
-			<block type="review/product_view_list" name="product.info.product_additional_data" as="product_additional_data" template="buyerreviews/product/view/list.phtml">
+			<block type="review/product_view_list" name="product.info.product_additional_data" as="product_additional_data" template="sumoheavy/buyerreviews/product/view/list.phtml">
 				<block type="review/form" name="product.review.form" as="review_form">
  					<block type="page/html_wrapper" name="product.review.form.fields.before" as="form_fields_before" translate="label">
 						<label>Review Form Fields Before</label>

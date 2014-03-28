@@ -20,32 +20,32 @@
  */
 
 class SUMOHeavy_BuyerReviews_Model_Review extends Mage_Review_Model_Review {
-	
-	function __construct()
-	{
-		parent::__construct();
-	}
-	
-	/**
-	 * Check if current review is someone who purchased or not
-	 *
-	 * @return bool
-	 */
-	public function isBuyer()
-	{
-		$customerId = $this->getCustomerId();
-		$productId = $this->getEntityPkValue();
-	
-		if($customerId && $productId)
-		{
-			$orderItems = Mage::getResourceModel('sales/order_item_collection')
-				->join('sales/order', 'order_id=entity_id')
-				->addFieldToFilter('customer_id', $customerId)
-				->addFieldToFilter('product_id', $productId);
 
-			return $orderItems->getSize() > 0;
-		}
+    function __construct()
+    {
+        parent::__construct();
+    }
 
-		return false;
-	}
+    /**
+     * Check if current review is someone who purchased or not
+     *
+     * @return bool
+     */
+    public function isBuyer()
+    {
+        $customerId = $this->getCustomerId();
+        $productId = $this->getEntityPkValue();
+
+        if($customerId && $productId)
+        {
+            $orderItems = Mage::getResourceModel('sales/order_item_collection')
+                ->join('sales/order', 'order_id=entity_id')
+                ->addFieldToFilter('customer_id', $customerId)
+                ->addFieldToFilter('product_id', $productId);
+
+            return $orderItems->getSize() > 0;
+        }
+
+        return false;
+    }
 }

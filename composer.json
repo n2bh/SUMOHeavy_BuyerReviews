@@ -1,0 +1,25 @@
+{
+    "name": "sumoheavy/magento-buyer-reviews",
+    "type": "magento-module",
+    "description": "Buyer Reviews Module for Magento",
+    "keywords": ["magento"],
+    "homepage": "https://github.com/sumoheavy/SUMOHeavy_BuyerReviews",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Robert Brodie",
+            "email": "robert@sumoheavy.com",
+            "homepage": "http://www.sumoheavy.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.13",
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra": {
+        "map": [
+            ["app", "app"]
+        ]
+    }
+}
