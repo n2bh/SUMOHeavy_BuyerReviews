@@ -19,7 +19,8 @@
     },
     "extra": {
         "map": [
-            ["app", "app"]
+            ["app", "app"],
+            ["skin", "skin"]
         ]
     }
 }
